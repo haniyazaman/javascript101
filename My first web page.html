@@ -1,0 +1,120 @@
+
+<html>
+    <header>
+
+    <title>My first web page
+    </title>
+    <style>
+        body {
+            background-color: rgba(245, 195, 255, 0.836);
+        }
+
+        h4 {
+            color: crimson;
+        }
+
+        p {
+            color: darkslateblue;
+        }
+    </style>
+     <script>
+        function addTwoNumbersPopup(number1, number2)
+        {
+            var addresult = parseInt(number1) + parseInt(number2)
+            alert("I have been asked to add numbers " + number1 + " and " + number2 + " result " + addresult)
+        }
+        function substractTwoNumbersPopup(number1, number2)
+        {
+            var substrctresult = parseInt(number1) - parseInt(number2)
+            alert("I have been asked to substract two numbers" + number1 + " and " + number2 + " result " + substractresult)
+        }
+        function multiplyTwoNumbersPopup(number1, number2)
+        {
+            var multiplyresult = parseInt(number1) * parseInt(number2)
+            alert("I ahve been asked to multiply two numbers" + number1 + " and " + number2 + " result " + multiplyresult)
+        }
+        function ddivideTwoNumberPopup(number1, number2)
+        {
+            var divideresult = parseInt(number1) / parseInt(number2)
+            alert("I have been asked to divide two numbers" + number1 + " and " + number2 + " result " + divideresult)
+        }
+    </script>
+</header>
+
+
+    <h1 style="color:Tomato;">This is my first heading</h1>
+    <p style="color:DodgerBlue;">This is my first paragraph</p>
+    <p style="color:violet;">This is my frist page</p>
+    <p style="background-color: rgba(9, 241, 195, 0.932);">I dont know how to spell first</p>
+    <h2>Basic HTML Table</h2>
+    <table style="width:10%">
+        <tbody><tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Ubaid</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Haniya</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Umair</td>
+            <td>16</td>
+        </tr>
+    </tbody></table>
+    <h3>The Making of a PB&amp;J</h3>
+    <ul>
+        <li>Peanutbutter</li>
+        <li>Jelly</li>
+        <li>Bread</li>
+        <li>Knife</li>
+        <li>A plate</li>
+    </ul>
+    <h5>Animated Images</h5>
+    <p>HTML allows moving images:</p>
+    <h4>Orange</h4>
+    <p>Green</p>
+    
+   
+    <form>
+        <input type="button" value="Click Me" onclick="alert(Woohoo)">
+        <br>
+        <br>
+        <title>Add Two Numbers</title>
+        <br>
+        <lable>Number1</lable>
+        <input id="number1add" type="number" value="2">
+        <br>
+        <br>
+        <lable>Numebr2</lable>
+        <input id="number2add" type="number" value="5">
+        <br>
+        <br>
+        <!-- <input type="button" value="Click Me" onclick="alert('Woohoo')"> -->
+        <input type="button" value="Add Two Number Popup" onclick="addTwoNumbersPopup(document.getElementById('number1add').value, document.getElementById('number2add').value)">
+        <br>
+        <br>
+        <input type="button" value="Substract Two Number Popup" onclick="substractTwoNumbersPopup(document.getElementById('number1add').value, document.getElementById('number2add').value)">
+        <br>
+        <br>
+        <input type="button" value="Multiply Two Number Popup" onclick="multiplyTwoNumbersPopup(document.getElementById('number1add').value, document.getElementById('number2add').value)">
+        <br>
+        <br>
+        <input type="button" value="Divide Two Numbers Popup" onclick="divideTwoNumbersPopup(document.getElementById('number1add').value, document.getElementById('number2add').value)">
+        <br>
+        <br>
+
+
+    </form>
+
+
+
+
+
+
+
+
+</body></html>
