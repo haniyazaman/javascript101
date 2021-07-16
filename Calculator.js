@@ -89,5 +89,15 @@
                     console.log("value returned is " + divideResult)
                     document.getElementById("result").innerHTML = "Result of Division = " + divideResult;
                 }
+
                 
+            }
+            function addMultipleNumbers()
+            {
+                var numberList = [200, 300, 400, 500];
+                var total = 0;
+                for (index = 0; index < numberList.length; index++){
+                    total = total + numberList[index];
+                }
+                document.getElementById("result").innerHTML = "The result of List Addition = " + total;
             }
