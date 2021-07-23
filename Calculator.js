@@ -92,12 +92,28 @@
 
                 
             }
-            function addMultipleNumbers()
+            function addMultipleNumbers(numberListText)
             {
-                var numberList = [200, 300, 400, 500];
+
+                var numberList = numberListText.split(',');
                 var total = 0;
                 for (index = 0; index < numberList.length; index++){
-                    total = total + numberList[index];
+                    number = parseInt(numberList[index]);
+                    total = total + number;
+                }
+                document.getElementById("result").innerHTML = "The result of List Addition = " + total;
+            }
+
+            function addMultipleNumbersUsingWhile(numberListText)
+            {
+
+                var numberList = numberListText.split(',');
+                var total = 0;
+                var index = 0;
+                while ( index < numberList.length ){
+                    number = parseInt(numberList[index]);
+                    total = total + number;
+                    index++;
                 }
                 document.getElementById("result").innerHTML = "The result of List Addition = " + total;
             }

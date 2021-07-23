@@ -26,6 +26,10 @@
             <input id="number2add" type="number" value="5">
             <br>
             <br>
+            <label>Number List</label>
+            <input id="numberListText", type="text">
+            <br>
+            <br>
             <!--<input type="button" value="Click Me" onclick="alert('Woohoo')">-->
             <!-- <input type="button" value="Add Two Numbers" onclick="addTwoNumbersPopup(document.getElementById('number1add').value, document.getElementById('number2add').value)">
             <br>
@@ -51,7 +55,10 @@
             <input style="color: rgba(182, 68, 60, 0.788);" type="button" value="Divide Two Numbers" onclick="showDivideNumberResultOnPage(document.getElementById('number1add').value, document.getElementById('number2add').value)">
             <br>
             <br>
-            <input type="button" value="Add Multiple Numbers" onclick="addMultipleNumbers()">
+            <input type="button" value="Add Multiple Numbers Using For" onclick="addMultipleNumbers(document.getElementById('numberListText').value)">
+            <br>
+            <br>
+            <input type="button" value="Add Multiple Numbers Using While" onclick="addMultipleNumbersUsingWhile(document.getElementById('numberListText').value)">
             <br>
             <br>
             <p style="color: rgba(67, 38, 172, 0.938);" id="result"></p>
